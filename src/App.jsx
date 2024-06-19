@@ -13,15 +13,9 @@ function App() {
   };
 
   const handleClick = () => {
-    let filterQuestions = [];
-    while (filterQuestions.length < sliderValue) {
-      let index = Math.floor(Math.random() * questions.length);
-      if (!filterQuestions.includes(questions[index])) {
-        filterQuestions.push(questions[index]);
-      }
-    }
-
-    setCurrQuestions(filterQuestions);
+    const shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+    const selectedQuestions = shuffledQuestions.slice(0, sliderValue);
+    setCurrQuestions(Array.from(selectedQuestions));
   };
 
   return (
