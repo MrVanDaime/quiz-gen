@@ -2,6 +2,6 @@
 
 The data is from /src/data/questions.js
 
-- To test it, just extract -> npm i -> npm run dev
+[Test it](https://mrvandaime.github.io/quiz-gen/)
 
 ![Quiz Generator](https://i.imgur.com/QCDqfbT.jpeg)
